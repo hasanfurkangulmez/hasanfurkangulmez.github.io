@@ -2,18 +2,5 @@
 RewriteEngine on
 
 RewriteOptions inherit
-RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^/?$ "https\:\/\/www\.hasanfurkangulmez\.com\/" [R=301,L]
-RewriteCond %{HTTP_HOST} ^hasanfurkangulmez\.com$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.hasanfurkangulmez\.com$
-RewriteRule ^assets\/?$ "https\:\/\/www\.hasanfurkangulmez\.com\/" [R=301,L]
-RewriteCond %{HTTP_HOST} ^hasanfurkangulmez\.com$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.hasanfurkangulmez\.com$
-RewriteRule ^assets\/img$ "https\:\/\/www\.hasanfurkangulmez\.com\/" [R=301,L]
-RewriteCond %{HTTP_HOST} ^hasanfurkangulmez\.com$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.hasanfurkangulmez\.com$
-RewriteRule ^css\/?$ "https\:\/\/www\.hasanfurkangulmez\.com\/" [R=301,L]
-RewriteCond %{HTTP_HOST} ^hasanfurkangulmez\.com$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.hasanfurkangulmez\.com$
-RewriteRule ^js\/?$ "https\:\/\/www\.hasanfurkangulmez\.com\/" [R=301,L]
-
+RewriteCond %{SERVER_PORT} !=443
+RewriteRule ^ https://www.hasanfurkangulmez.com.%{REQUEST_URI} [NS,R,L]
