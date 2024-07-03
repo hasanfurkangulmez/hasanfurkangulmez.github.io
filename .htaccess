@@ -1,6 +1,0 @@
-
-RewriteEngine on
-
-RewriteOptions inherit
-RewriteCond %{SERVER_PORT} !=443
-RewriteRule ^ https://www.hasanfurkangulmez.com.%{REQUEST_URI} [NS,R,L]
