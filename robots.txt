@@ -1,5 +1,6 @@
 User-agent: Googlebot
 Allow: /index.html
+Allow: /sitemap.xml
 Disallow: /
 
 User-agent: googlebot-image
@@ -7,10 +8,12 @@ Disallow: /
 
 User-agent: googlebot-mobile
 Allow: /index.html
+Allow: /sitemap.xml
 Disallow: /
 
 User-agent: *
 Allow: /index.html
+Allow: /sitemap.xml
 Disallow: /
 
 Sitemap: https://www.hasanfurkangulmez.com/sitemap.xml
