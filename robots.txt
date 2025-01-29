@@ -16,4 +16,4 @@ Allow: /index.html
 Allow: /sitemap.xml
 Disallow: /
 
-Sitemap: https://www.hasanfurkangulmez.com/sitemap.xml
+Sitemap: https://hasanfurkangulmez.github.io/sitemap.xml
